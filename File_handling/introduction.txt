@@ -1,0 +1,52 @@
+🔶 1. FILE HANDLING (Foundation)
+🔹 What is it?
+
+👉 Reading/writing data from files (txt, csv, etc.)
+========================================
+🔹 Basic Example
+# write
+with open("data.txt", "w") as f:
+    f.write("Hello Diya")
+
+# read
+with open("data.txt", "r") as f:
+    print(f.read())
+========================================
+🔹 Modes
+
+Mode	  Meaning
+---------------------
+"r"	       read
+"w"	       write (overwrite)
+"a"	       append
+"r+        read + write
+
+==========================================
+
+🔹 Important Concept
+
+👉 Always use with open() (VERY IMPORTANT)
+
+with open("data.txt", "r") as f:
+    data = f.read()
+
+👉 Why?
+
+Automatically closes file ✅
+No memory issues ✅
+
+================================================
+
+| Method         | What it does           |
+| -------------- | ---------------------- |
+| `open()`       | opens file             |
+| `with open()`  | safe open + auto close |
+| `read()`       | full file              |
+| `readline()`   | one line               |
+| `readlines()`  | list of lines          |
+| `write()`      | write string           |
+| `writelines()` | write list             |
+| `strip()`      | clean text             |
+
+
+======================================================
